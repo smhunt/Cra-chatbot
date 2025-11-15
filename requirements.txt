@@ -1,0 +1,99 @@
+# Core LLM & RAG Framework
+llama-index==0.9.48
+llama-index-core==0.10.0
+llama-index-embeddings-openai==0.1.6
+llama-index-llms-anthropic==0.1.4
+llama-index-vector-stores-qdrant==0.2.8
+
+# LLM Providers
+openai>=1.12.0
+anthropic>=0.18.0
+
+# Vector Database
+qdrant-client>=1.7.0
+sentence-transformers>=2.3.1
+
+# Document Processing
+beautifulsoup4>=4.12.2
+scrapy>=2.11.0
+pdfplumber>=0.10.3
+pypdf2>=3.0.1
+unstructured>=0.12.0
+python-docx>=1.1.0
+
+# Retrieval & Reranking
+rank-bm25>=0.2.2
+cohere>=4.47.0
+
+# Web Scraping
+requests>=2.31.0
+lxml>=5.1.0
+selenium>=4.16.0  # For dynamic content if needed
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.5.3
+pydantic-settings>=2.1.0
+
+# API Framework
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.25
+aiosqlite>=0.19.0
+
+# Testing & Evaluation
+pytest>=7.4.4
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+ragas>=0.1.4
+
+# Monitoring & Observability
+langfuse>=2.13.0
+
+# Data Processing
+pandas>=2.2.0
+numpy>=1.26.3
+python-dateutil>=2.8.2
+
+# Text Processing
+nltk>=3.8.1
+spacy>=3.7.2
+tiktoken>=0.5.2
+
+# Caching
+redis>=5.0.1
+upstash-redis>=0.15.0  # Optional: Serverless Redis
+
+# Logging
+loguru>=0.7.2
+
+# Configuration
+pyyaml>=6.0.1
+toml>=0.10.2
+
+# Progress Bars
+tqdm>=4.66.1
+
+# HTTP Client
+httpx>=0.26.0
+
+# JSON Schema Validation
+jsonschema>=4.21.0
+
+# HTML/Markdown Processing
+markdown>=3.5.2
+html2text>=2020.1.16
+
+# Development Tools (optional)
+ipython>=8.20.0
+jupyter>=1.0.0
+black>=24.1.1
+flake8>=7.0.0
+mypy>=1.8.0
+
+# Type Hints
+types-requests>=2.31.0
+types-PyYAML>=6.0.12

@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-11-15",
+    "total_sources": 12,
+    "priority_tiers": 3,
+    "description": "CRA documentation sources for Phase 1 implementation"
+  },
+  "sources": {
+    "tier_1_core": {
+      "description": "Priority 1 - Core individual tax topics for initial scope",
+      "estimated_documents": 400,
+      "target_accuracy": "70%",
+      "sources": [
+        {
+          "id": "cra_tax_folios",
+          "name": "Income Tax Folios (All 7 Series)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios.html",
+          "document_type": "folio",
+          "format": "html",
+          "topics": ["rrsp", "tfsa", "deductions", "credits", "filing"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 200,
+          "scraping_method": "html_parser",
+          "update_frequency": "quarterly",
+          "notes": "Contains 7 series covering Personal, Business, Charities, etc."
+        },
+        {
+          "id": "cra_top_questions",
+          "name": "Top Tax Questions and Tips",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-topics.html",
+          "document_type": "faq",
+          "format": "html",
+          "topics": ["rrsp", "tfsa", "medical", "charitable", "moving", "home_office"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 100,
+          "scraping_method": "html_parser",
+          "update_frequency": "monthly",
+          "notes": "Real questions Canadians ask - perfect for ground truth"
+        },
+        {
+          "id": "cra_t1_guide",
+          "name": "2024 T1 General Tax Guide",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["filing", "basic_personal_amount", "deductions", "credits"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Most important single document for individual taxpayers"
+        },
+        {
+          "id": "cra_rrsp_guide",
+          "name": "RC4092 - Registered Retirement Savings Plans (RRSPs)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4092.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["rrsp"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Comprehensive RRSP guide - critical for Phase 1"
+        },
+        {
+          "id": "cra_tfsa_guide",
+          "name": "RC4466 - Tax-Free Savings Account (TFSA)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4466.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["tfsa"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Complete TFSA guide - critical for Phase 1"
+        },
+        {
+          "id": "cra_medical_expenses",
+          "name": "RC4065 - Medical Expenses",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4065.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["medical"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Detailed eligible medical expenses list"
+        },
+        {
+          "id": "cra_moving_expenses",
+          "name": "T1-M - Moving Expenses Deduction Guide",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t1-m.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["moving"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Covers eligibility and claimable expenses"
+        },
+        {
+          "id": "cra_home_office",
+          "name": "T777 - Statement of Employment Expenses (Home Office)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t777.html",
+          "document_type": "form_guide",
+          "format": "pdf",
+          "topics": ["home_office"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Employee home office expense deduction"
+        },
+        {
+          "id": "cra_charitable_donations",
+          "name": "P113 - Gifts and Income Tax",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/p113.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["charitable"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "Charitable donation tax credits"
+        },
+        {
+          "id": "cra_whats_new_2024",
+          "name": "2024-2025 What's New for Individuals",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/whats-new.html",
+          "document_type": "bulletin",
+          "format": "html",
+          "topics": ["all"],
+          "tax_year": 2024,
+          "priority": 1,
+          "estimated_count": 1,
+          "scraping_method": "html_parser",
+          "update_frequency": "annual",
+          "notes": "Critical for staying current with tax year changes"
+        }
+      ]
+    },
+    "tier_2_business_gst": {
+      "description": "Priority 2 - Business and GST/HST coverage",
+      "estimated_documents": 320,
+      "target_accuracy": "80%",
+      "sources": [
+        {
+          "id": "cra_gst_hst_memoranda",
+          "name": "GST/HST Memoranda Series",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gsthstm.html",
+          "document_type": "memoranda",
+          "format": "html",
+          "topics": ["gst", "hst", "business"],
+          "tax_year": 2024,
+          "priority": 2,
+          "estimated_count": 150,
+          "scraping_method": "html_parser",
+          "update_frequency": "quarterly",
+          "notes": "Comprehensive GST/HST technical information"
+        },
+        {
+          "id": "cra_business_guides",
+          "name": "Business and Self-Employed Guides",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["business", "self_employed"],
+          "tax_year": 2024,
+          "priority": 2,
+          "estimated_count": 50,
+          "scraping_method": "pdf_download",
+          "update_frequency": "annual",
+          "notes": "For Phase 2 expansion to business queries"
+        }
+      ]
+    },
+    "tier_3_comprehensive": {
+      "description": "Priority 3 - Comprehensive coverage for edge cases",
+      "estimated_documents": 1100,
+      "target_accuracy": "85-90%",
+      "sources": [
+        {
+          "id": "cra_all_forms",
+          "name": "Complete Forms Library (800+)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications.html",
+          "document_type": "form",
+          "format": "pdf",
+          "topics": ["all"],
+          "tax_year": 2024,
+          "priority": 3,
+          "estimated_count": 800,
+          "scraping_method": "pdf_download",
+          "update_frequency": "ongoing",
+          "notes": "All T-series, RC-series, GST, NR forms"
+        },
+        {
+          "id": "cra_information_circulars",
+          "name": "Information Circulars",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic.html",
+          "document_type": "circular",
+          "format": "html",
+          "topics": ["all"],
+          "tax_year": 2024,
+          "priority": 3,
+          "estimated_count": 100,
+          "scraping_method": "html_parser",
+          "update_frequency": "quarterly",
+          "notes": "Administrative policies and procedures"
+        },
+        {
+          "id": "cra_historical_packages",
+          "name": "Historical Tax Packages (2018-2023)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years.html",
+          "document_type": "guide",
+          "format": "pdf",
+          "topics": ["all"],
+          "tax_year": "2018-2023",
+          "priority": 3,
+          "estimated_count": 110,
+          "scraping_method": "pdf_download",
+          "update_frequency": "static",
+          "notes": "For historical tax year questions"
+        }
+      ]
+    }
+  },
+  "scraping_strategy": {
+    "phase_1_week_1_2": {
+      "description": "Initial collection - Core topics only",
+      "sources_to_scrape": [
+        "cra_tax_folios",
+        "cra_top_questions",
+        "cra_t1_guide",
+        "cra_rrsp_guide",
+        "cra_tfsa_guide",
+        "cra_medical_expenses",
+        "cra_moving_expenses",
+        "cra_home_office",
+        "cra_charitable_donations",
+        "cra_whats_new_2024"
+      ],
+      "estimated_time": "12-18 hours",
+      "estimated_size": "5-10 GB"
+    },
+    "phase_2_week_3_4": {
+      "description": "Business and GST/HST expansion",
+      "sources_to_scrape": [
+        "cra_gst_hst_memoranda",
+        "cra_business_guides"
+      ],
+      "estimated_time": "8-12 hours",
+      "estimated_size": "3-5 GB"
+    },
+    "phase_3_week_5_6": {
+      "description": "Comprehensive coverage",
+      "sources_to_scrape": [
+        "cra_all_forms",
+        "cra_information_circulars",
+        "cra_historical_packages"
+      ],
+      "estimated_time": "20-30 hours",
+      "estimated_size": "10-15 GB"
+    }
+  },
+  "scraping_configuration": {
+    "rate_limiting": {
+      "delay_between_requests": "2 seconds",
+      "max_retries": 3,
+      "timeout": "30 seconds",
+      "user_agent": "Mozilla/5.0 (compatible; CRA-ChatbotResearch/1.0)"
+    },
+    "robots_txt_compliance": true,
+    "respect_cra_tos": true,
+    "acceptable_use": "Research and educational purposes only"
+  },
+  "notes": [
+    "All sources are publicly available CRA documentation",
+    "No authentication required for public documents",
+    "Crown copyright - reproduction permitted for non-commercial use",
+    "Prioritize quality over quantity - verify extraction accuracy",
+    "Update strategy: quarterly for tax folios, annual for guides",
+    "Monitor CRA website for new publications and updates"
+  ]
+}
